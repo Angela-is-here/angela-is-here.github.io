@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="styles.css">
+        <title>
+            A n g e l a _are_ you_there
+        </title>
+    </head>
+    <body onload="begin()">
+
+        <div id="myDIV" class="center"></div>
+        <div id="myDIV2" class="center"></div>
+
+        <div id="beginText">
+          <h1>Angie, is that you?</h1>
+          <br>
+          <h2><span style="background-color: rgba(0, 0, 0, 0.548);"> You just got to Angie's private place; <br> which made her spend so much time figuring how to write a code for that</span></h2>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p> click buttons in order to find what she's doing rn</p>
+          <br>
+          <br>
+          <br>
+          <button onclick="PlaySound()"> music first? </button>
+
+        </div>
+        
+        <img class="demo-bg" url="bg.png" alt="">
+
+        <div id="macFvid" >
+                <video autoplay muted width="100%" height="950" filter:opacity="60%">
+                 <source src="vid2.mp4" type="video/mp4">
+                </video>
+        </div>
+
+        <div id="firstText" >
+                <h1><span style="background-color:rgb(11, 0, 172); color:rgb(255, 255, 255);">  No I'm not, can you take care of my plants? </span><h1>
+                    <br>
+                    <h5><span>
+                    I'm trying my best not to kill them
+                    <br>
+                    Maybe artificial flowers can be a good alternative?
+                    <br>
+                    (..)
+                </span></h5>
+        </div>
+
+        <div id="secondText" >
+            <h1><span style="background-color:rgb(221, 221, 221); color:black;">  Yes I guess so? </span><h1>
+                <br>
+                <h5><span>
+                Unfortunately yes ;(
+                <br>
+                I love to watch some Anime or movies in my free time.
+                <br>
+                When I'm watching a movie, I can't watch it before knowing the entire plot.
+                <br>
+                <br>
+                Some might say then what's the point of watching a movie 
+                <br>
+                but it's still scary to me 
+            </span></h5>
+    </div>
+
+         <div id="thirdText" class="center">
+        <h1><span style="background-color:rgba(0, 0, 0, 0.267); color:rgb(255, 255, 255);"> Everywhere </span><h1>
+        </div>
+
+        <div id="fourthText">
+            <h1><span style="background-color:rgba(0, 0, 0, 0.267); color:rgb(255, 255, 255);">  I love to travel </span><h1>
+            </div>
+
+
+        <div id="slideShow">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" >
+          <img src="tra1.jpg" class="center" style="width: auto; height: 40vh">
+          <br>
+          <div class="text">Kagoshima</div>
+        </div>
+
+        <div class="mySlides fade" >
+            <img src="tra2.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">Sentosa</div>
+          </div>
+
+          <div class="mySlides fade" >
+            <img src="tra3.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">Singapore</div>
+          </div>
+
+          <div class="mySlides fade" >
+            <img src="tra4.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">LA</div>
+          </div>
+
+          <div class="mySlides fade" >
+            <img src="tra5.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">Berlin</div>
+          </div>
+
+          <div class="mySlides fade" >
+            <img src="tra6.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">Hong Kong</div>
+          </div>
+
+          <div class="mySlides fade" >
+            <img src="tra7.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">Tokyo</div>
+          </div>
+
+          <div class="mySlides fade" >
+            <img src="tra8.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">Bangkok</div>
+          </div>
+
+          <div class="mySlides fade" >
+            <img src="tra9.jpg" class="center" style="width: auto; height: 40vh">
+            <br>
+            <div class="text">And many more..</div>
+          </div>
+
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+      </div>
+
+        </div>
+
+      
+     <div id="buttonDiv" class="center2">
+      <button class="button1"onclick="firstButtonPress()">Are you at home?</button>
+      <button class="button2" onclick="secondButtonPress()">Are you busy?</button>
+      <button class="button3" onclick="thirdButtonPress()">Where have you been?</button>
+     </div>
+
+    
+
+
+    
+
+      <script type="text/javascript">
+
+        // ref: https://stackoverflow.com/questions/32913026/click-a-button-to-play-sound-on-javascript
+        var hello = new Audio();
+        hello.src = "hello.mp3";
+        function PlaySound() {
+            hello.play();
+        }
+
+        function begin() {
+            document.getElementById('slideShow').style.display = "none";
+            document.getElementById('beginText').style.display = "Block";
+            document.getElementById("myDIV").style.display = "none";
+            document.getElementById("myDIV2").style.display = "none";
+            document.getElementById("firstText").style.display = "none";
+            document.getElementById("secondText").style.display = "none";
+            document.getElementById("thirdText").style.display = "none";
+            document.getElementById("fourthText").style.display = "none";
+            document.getElementById("macFvid").style.display = "none";
+            
+        }
+
+        function firstButtonPress() {
+            document.getElementById('slideShow').style.display = "none";
+            document.getElementById('beginText').style.display = "none";
+            document.getElementById("firstText").style.display = "block";
+            document.getElementById("secondText").style.display = "none";
+            document.getElementById("thirdText").style.display = "none";
+            document.getElementById("myDIV2").style.display = "none";
+            document.getElementById("macFvid").style.display = "none";
+            document.getElementById("myDIV").style.display = "block";
+            document.getElementById("myDIV").style.backgroundImage = "url(flower.JPG)";
+            document.getElementById("myDIV").style.backgroundSize = "cover";
+        }
+
+        function secondButtonPress() {
+         document.getElementById('slideShow').style.display = "none";
+         document.getElementById('beginText').style.display = "none";
+         document.getElementById("firstText").style.display = "none";
+         document.getElementById("secondText").style.display = "block";
+         document.getElementById("thirdText").style.display = "none";
+         document.getElementById("myDIV").style.display = "none";
+         document.getElementById("myDIV2").style.display = "none";
+         document.getElementById("macFvid").style.display = "block";
+        }
+
+
+        function thirdButtonPress() {
+         document.getElementById('beginText').style.display = "none";
+         document.getElementById("firstText").style.display = "none";
+         document.getElementById("secondText").style.display = "none";
+         document.getElementById("thirdText").style.display = "block";
+         document.getElementById("macFvid").style.display = "none";
+         document.getElementById("myDIV").style.display = "block";
+         document.getElementById("myDIV2").style.display = "none";
+         document.getElementById('slideShow').style.display = "block";
+         document.getElementById("myDIV").style.backgroundImage = "url(tra9.jpg)";
+         document.getElementById("myDIV").style.backgroundSize = "cover";
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+
+        </script>
+
+
+    </body>
+</html>
+

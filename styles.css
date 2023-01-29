@@ -1,0 +1,361 @@
+body {
+    width: 100;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.829); */
+    background-image: url("bg3.png");
+    background-size: cover;
+  }
+
+
+  .demo-wrap {
+    width: 100vw;
+    height: 80vh;
+    overflow:hidden;
+    position: relative;
+  }
+  
+  .demo-bg {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(bg.png);
+    background-size: cover;
+  }
+  
+
+  h1 {
+    color: white;
+    font-size: 35pt;
+    /* margin-left: 20px; */
+  }
+
+  h2 {
+    color: rgb(197, 197, 197);
+    font-size: 20pt;
+    font-style: italic;
+  }
+
+  p {
+    color: rgb(216, 188, 201);
+    font-size: 16pt;
+    font-style: bold;
+  }
+
+  h5{
+    color: rgb(0, 0, 0);
+    font-size: 20pt;
+    font-style: bold;
+  }
+
+  h5 span { 
+    background-color: rgba(255, 255, 255, 0.452); 
+    text-align: left;
+}
+
+  #slideShow {
+    position: fixed;
+    z-index: 98;
+    left: 0%;
+    top: 25%;
+    bottom: 0;
+    width: 100vw;
+    height: 90vh;
+  } 
+
+
+  #bgCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  #myDIV {
+    position:relative;
+    overflow: hidden;
+    left: 0%;
+    bottom: 0;
+    width: 100vw;
+    height: 98vh;
+    text-align: center;
+    background-color: #717171;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+  } 
+
+  #myDIV2 {
+    position:relative;
+    overflow: hidden;
+    left: 0%;
+    bottom: 0;
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    background-color: #717171;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+  } 
+
+
+  #macFVid{
+    position: fixed;
+    overflow: hidden;
+  }
+
+  #video{
+    filter:opacity(60%);
+  }
+  #frame{
+    position: relative;
+    transform: translate3d(-50%, -50%, 0 );
+    width: 50vw;
+    height: 30vh;
+    text-align: center;
+    background-color: red;
+    opacity: 0.8;
+  }
+
+  #buttonDiv{
+    position: absolute;
+    left: 25%;
+    right: auto;
+    top: 80vh;
+    height: 10vh;
+    text-align: center;
+  } 
+
+  
+  #buttonDiv2{
+    position: absolute;
+    left: 25%;
+    right: auto;
+    top: 90vh;
+    height: 10vh;
+    text-align: center;
+  } 
+
+  #beginText {
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    z-index: 100;
+  }
+
+  #firstText {
+    position: absolute;
+    top: 25vh;
+    left:25%;
+    text-align: left;
+  }
+
+  #secondText {
+    position: absolute;
+    top: 25vh;
+    left:25%;
+    text-align: left;
+    z-index: 5;
+  }
+
+  #thirdText {
+    position: absolute;
+    top: 10vh;
+    left: 25%;
+    bottom: 0;
+    text-align: center;
+    z-index: 6;
+  }
+
+/*   
+  #fourthText {
+    position: absolute;
+    top: 10vh;
+    left: 25%;
+    bottom: 0;
+    text-align: center;
+    z-index: 7;
+  }
+
+  
+  #fifthText {
+    position: absolute;
+    top: 10vh;
+    left: 25%;
+    bottom: 0;
+    text-align: center;
+    z-index: 8;
+  } */
+
+  .button1 {
+    background-color: #d3974898; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 10px;
+    border-radius: 10px;
+  }
+
+  .button2 {
+    background-color: #9bd9e986; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 10px;
+    border-radius: 10px;
+  }
+
+  .button3 {
+    background-color: #f7699865; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 10px;
+    border-radius: 10px;
+  }
+
+
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .center2 {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  
+  .center3 {
+    position: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    bottom:20;
+    width: 50%;
+  }
+
+
+
+
+
+
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: 80;
+}
+
+/* Hide the images by default */
+.mySlides {
+  position: relative;
+  display: none;
+ z-index: 80;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  position: relative;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 80;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  position: relative;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  position: relative;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 80;
+}
+
+.active, .dot:hover {
+  position: relative;
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  position: relative;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  z-index: 80;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
