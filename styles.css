@@ -27,26 +27,30 @@ body {
   
 
   h1 {
+    font-family: 'Chakra Petch', sans-serif;
     color: white;
-    font-size: 35pt;
+    font-size: 33pt;
     /* margin-left: 20px; */
   }
 
   h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(197, 197, 197);
-    font-size: 20pt;
-    font-style: italic;
+    font-size: 18pt;
   }
 
   p {
+    font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(216, 188, 201);
     font-size: 16pt;
-    font-style: bold;
+    font-weight: 500;
+    font-style: italic;
   }
 
   h5{
+    font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 20pt;
+    font-size: 18pt;
     font-style: bold;
   }
 
