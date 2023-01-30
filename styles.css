@@ -26,6 +26,17 @@ body {
   }
   
 
+  .blur {
+    object-fit: cover;
+    filter: blur(0.3rem);
+  }
+  
+  .blur:hover {
+    filter: none;
+    filter: drop-shadow(0px 3px 2px rgb(70, 70, 70));
+  }
+
+
   h1 {
     font-family: 'Chakra Petch', sans-serif;
     color: white;
@@ -195,7 +206,7 @@ body {
   } */
 
   .button1 {
-    background-color: #d3974898; /* Green */
+    background-color: #d3974898;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -205,10 +216,15 @@ body {
     font-size: 16px;
     margin: 6px 10px;
     border-radius: 10px;
+  }
+
+  .button1:hover {
+    background-color: #07070786;
+    cursor: grab;
   }
 
   .button2 {
-    background-color: #9bd9e986; /* Green */
+    background-color: #9bd9e986;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -218,10 +234,15 @@ body {
     font-size: 16px;
     margin: 6px 10px;
     border-radius: 10px;
+  }
+
+  .button2:hover {
+    background-color: #07070786;
+    cursor: grab;
   }
 
   .button3 {
-    background-color: #f7699865; /* Green */
+    background-color: #f7699865; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -233,6 +254,10 @@ body {
     border-radius: 10px;
   }
 
+  .button3:hover {
+    background-color: #07070786;
+    cursor: grab;
+  }
 
 
   .center {
