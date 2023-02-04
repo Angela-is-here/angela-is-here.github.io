@@ -153,6 +153,7 @@ body {
     top: 90vh;
     height: 10vh;
     text-align: center;
+    z-index: 99;
   } 
 
   #beginText {
