@@ -142,6 +142,7 @@ body {
     top: 80vh;
     height: 10vh;
     text-align: center;
+    z-index: 99;
   } 
 
   
