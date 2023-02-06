@@ -34,7 +34,8 @@
         <img class="demo-bg" url="bg.png" alt="">
 
         <div id="macFvid" >
-                <video autoplay muted loop width="100%" height="950" filter:opacity="60%">
+                <!-- <video autoplay muted loop width="100%" height="950" filter:opacity="60%"> -->
+                <video id="video" autoplay muted loop>
                  <source src="vid2.mp4" type="video/mp4">
                 </video>
         </div>
@@ -48,7 +49,7 @@
                     Maybe artificial flowers can be a good alternative?
                     <br>
                     (..)
-                    </span></h5>
+                </span></h5>
         </div>
 
         <div id="secondText" >
@@ -161,10 +162,9 @@
 
       
      <div id="buttonDiv" class="center2">
-      <button class="button1"onclick="firstButtonPress()">Are you at home?</button>
+      <button class="button1" onclick="firstButtonPress()">Are you at home?</button>
       <button class="button2" onclick="secondButtonPress()">Are you busy?</button>
       <button class="button3" onclick="thirdButtonPress()">Where have you been?</button>
-     </div>
 
     
 
@@ -182,7 +182,7 @@
 
         function begin() {
             document.getElementById('slideShow').style.display = "none";
-            document.getElementById('beginText').style.display = "Block";
+            document.getElementById('beginText').style.display = "block";
             document.getElementById("myDIV").style.display = "none";
             document.getElementById("myDIV2").style.display = "none";
             document.getElementById("firstText").style.display = "none";
