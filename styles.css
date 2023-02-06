@@ -4,6 +4,7 @@ body {
     /* background-color: rgba(0, 0, 0, 0.829); */
     background-image: url("bg3.png");
     background-size: cover;
+    margin: 0;
   }
 
 
@@ -23,6 +24,7 @@ body {
     height: 100%;
     background-image: url(bg.png);
     background-size: cover;
+    z-index: 1;
   }
   
 
@@ -117,13 +119,16 @@ body {
   } 
 
 
-  #macFVid{
+  #macFvid{
     position: fixed;
     overflow: hidden;
+    min-width: 100%;
+    max-width: 100%;
   }
 
   #video{
-    filter:opacity(60%);
+    height: 100vh;
+    z-index: 0;
   }
   #frame{
     position: relative;
@@ -153,7 +158,6 @@ body {
     top: 90vh;
     height: 10vh;
     text-align: center;
-    z-index: 99;
   } 
 
   #beginText {
@@ -390,3 +394,16 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* @media (max-width: 1162px) {
+  #macFvid{
+    position: fixed;
+    overflow: hidden;
+    min-width: auto;
+    max-width: auto;
+    min-height: 100%;
+    max-height: 100%;
+  }
+  /* #video{
+    height: 100vh;
+  } */
